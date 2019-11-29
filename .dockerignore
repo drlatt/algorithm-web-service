@@ -1,0 +1,6 @@
+tmp/*
+docker-compose.yml
+algorithm_web_service*
+.gitignore
+Makefile
+README.md
