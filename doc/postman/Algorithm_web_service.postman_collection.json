@@ -1,0 +1,584 @@
+{
+	"info": {
+		"_postman_id": "6399b6f4-2f3c-4485-b3a4-90742ba6da30",
+		"name": "Algorithm_web_service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fibonacci API(optimized)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"n\": \"10\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v2/fibonacci/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v2",
+						"fibonacci",
+						""
+					]
+				},
+				"description": "Solve the Fibonacci sequence. This is the optimized API endpoint.\nMake a POST request to this API by providing a single number, n in the request.\n\nThe API returns the result as a JSON message.\n\nThe example shows a sample request"
+			},
+			"response": [
+				{
+					"name": "Fibonacci API(optimized)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"n\": \"10\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v2/fibonacci/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v2",
+								"fibonacci",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Nov 2019 22:37:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "14"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": 55\n}"
+				}
+			]
+		},
+		{
+			"name": "Fibonacci API(optimized) - negative number",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"n\": \"-10\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v2/fibonacci/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v2",
+						"fibonacci",
+						""
+					]
+				},
+				"description": "Solve the Fibonacci sequence. This is the optimized API endpoint.\nMake a POST request to this API by providing a single number, n in the request.\n\nThe API returns the result as a JSON message.\n\nThe example shows a sample request"
+			},
+			"response": [
+				{
+					"name": "Fibonacci API(optimized) - negative number",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"n\": \"-10\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v2/fibonacci/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v2",
+								"fibonacci",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Nov 2019 22:41:58 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": -55\n}"
+				}
+			]
+		},
+		{
+			"name": "Fibonacci API(unoptimized)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"n\": \"10\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/fibonacci/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"fibonacci",
+						""
+					]
+				},
+				"description": "Solve the Fibonacci sequence. This is the unoptimized API endpoint.\nMake a POST request to this API by providing a single number, n in the request.\n\nThe API returns the result as a JSON message.\n\nThe example shows a sample request"
+			},
+			"response": [
+				{
+					"name": "Fibonacci API(unoptimized)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"n\": \"10\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/fibonacci/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"fibonacci",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Nov 2019 22:36:32 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "14"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": 55\n}"
+				}
+			]
+		},
+		{
+			"name": "Fibonacci API(unoptimized) - negative number",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"n\": \"-6\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/fibonacci/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"fibonacci",
+						""
+					]
+				},
+				"description": "Solve the Fibonacci sequence. This is the unoptimized API endpoint.\nMake a POST request to this API by providing a single number, n in the request.\n\nThe API returns the result as a JSON message.\n\nThe example shows a sample request"
+			},
+			"response": [
+				{
+					"name": "Fibonacci API(unoptimized) - negative number",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"n\": \"-6\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/fibonacci/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"fibonacci",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Nov 2019 22:43:22 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "14"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": -8\n}"
+				}
+			]
+		},
+		{
+			"name": "Ackermann API(unoptimized)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"m\": \"3\",\n    \"n\": \"5\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/ackermann/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"ackermann",
+						""
+					]
+				},
+				"description": "Solve the Ackermann function. This is the unoptimized API endpoint\nMake a POST request to this API by providing two non-negative numbers in the body of the request.\n\nThe API returns the result as a JSON message.\n\nThe example shows a sample request"
+			},
+			"response": [
+				{
+					"name": "Ackermann API(unoptimized)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"m\": \"3\",\n    \"n\": \"5\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/ackermann/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"ackermann",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Nov 2019 22:38:35 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": 253\n}"
+				}
+			]
+		},
+		{
+			"name": "Factorial API(optimized)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"n\": \"20\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v2/factorial/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v2",
+						"factorial",
+						""
+					]
+				},
+				"description": "Solve the factorial of a non-negative number n. This is the optimized API endpoint.\nMake a POST request to this API by providing a single non-negative number, n in the request.\n\nThe API returns the result as a JSON message.\n\nThe example shows a sample request"
+			},
+			"response": [
+				{
+					"name": "Factorial API(optimized)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"n\": \"20\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v2/factorial/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v2",
+								"factorial",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Nov 2019 23:56:16 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "31"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": 2432902008176640000\n}"
+				}
+			]
+		},
+		{
+			"name": "Factorial API(unoptimized)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"n\": \"6\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/factorial/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"factorial",
+						""
+					]
+				},
+				"description": "Solve the factorial of a non-negative number n. This is the unoptimized API endpoint.\nMake a POST request to this API by providing a single non-negative number, n in the request.\n\nThe API returns the result as a JSON message.\n\nThe example shows a sample request"
+			},
+			"response": [
+				{
+					"name": "Factorial API(unoptimized)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"n\": \"6\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/factorial/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"factorial",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Nov 2019 22:34:24 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": 720\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
