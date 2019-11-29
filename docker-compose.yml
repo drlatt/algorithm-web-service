@@ -1,0 +1,27 @@
+version: '2'
+
+services:
+  algorithm_web_service:
+    container_name: algorithm_web_service
+    build: 
+      context: .
+    restart: always
+    ports: 
+      - "3000:3000"
+    networks: 
+      - web_service
+
+  prometheus:
+    container_name: prometheus
+    restart: always
+    image: quay.io/prometheus/prometheus:latest
+    ports: 
+      - "9090:9090"
+    volumes: 
+      - "./prometheus.yml:/etc/prometheus/prometheus.yml"
+    networks: 
+      - web_service
+
+networks: 
+  web_service:
+    driver: bridge
