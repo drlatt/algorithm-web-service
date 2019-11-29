@@ -18,7 +18,7 @@ Sample application endpoint: localhost:3000/api/v1/fibonacci
 *Run this code locally*
 1. Clone this repository unto your PC
 2. Ensure you have `docker`, `docker-compose`, the `Go` binary (version 1.11+ required) and the `make` command-line utility installed on your PC.
-3. Run `make run` to run the code and start up the web server. \
+3. Run `make run` to run the code locally and start up the web server. \
 `make run` downloads the required dependencies, builds the binary and starts up the webserver on port 3000.
 
 *Run this code using docker and docker-compose*
@@ -87,7 +87,7 @@ ok      algorithm_web_service   20.110s
 # APIs implemented using the POST method 
 Each algorithm mentioned above was implemented using two different APIs (/api/v1 and /api/v2). 
 
-The `/api/v1` endpoints represent non-optimized implementations of the algorithms. \
+The `/api/v1` endpoints represent unoptimized implementations of the algorithms. \
 The `/api/v2` endpoints represent the optimized implementations of the algorithms.
 
 # API list
@@ -130,8 +130,7 @@ Prometheus was added as a service in the `docker-compose.yml` file provided in t
 Prometheus can be accessed on http://localhost:9090 once the docker-compose.yml file is applied. The metrics exposed by the application can also be accessed via http://localhost:3000/metrics.
 
 ## Metrics measured
-The main metrics measured by Prometheus are application uptime, request latency, request errors and volume of traffic. \
-The resource utilization metrics of the application can be measured in a production environment by using the [node exporter](https://github.com/prometheus/node_exporter).
+The main metrics configured to be measured by Prometheus are application uptime, request latency, request errors and volume of traffic.
 
 **Exposed Application metrics**
 ![metrics](./doc/images/metrics.png)
@@ -156,3 +155,4 @@ The resource utilization metrics of the application can be measured in a product
 # Improvements
 * Implement the optimized version of the Ackermann function
 * Implement the use of the `go context` package to manage cancellation and timeout of requests.
+* Implement tests for the APIs
